@@ -1,0 +1,77 @@
+
+<html>
+<head>
+    <!-- this is title. -->
+    <title> contact form design </title>
+    <meta charset="utf-8">
+    <meta name="description" content="my website">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Sandip Gajurel">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style type="text/css">
+        a:hover{
+    background-color: red;
+}
+/*this background image is used in this webpage.*/
+.page4{
+    background-image: url("image/contact.jpg");
+    background-size: cover;
+
+}
+    </style>
+</head>
+<body class="page4">
+    <nav>
+        <ul>
+    <li><a href="index.html">Home</a></li>
+<li><a href="page1.html">Blog</a></li>
+<li><a href="page2.html">CV</a></li>
+<li><a href="page3.html">Research</a></li>
+<li><a href="page4.html">Contact</a></li>
+
+</ul>
+    </nav>
+<!-- this is the container whih is used to take the information from user. -->
+    <div class="container "style:padding: 20px> 
+     <h2> CONTACT US</h2>  
+            <form action="" name="form" onsubmit="return passwordvalid()" method="post">
+                <input type="text" name="frstname"  placeholder="first name"><br><br>
+                <input type="text" name="lastname" placeholder="lastname"><br><br> 
+                <input type="number" name="phone" placeholder="Phone number"><br><br> 
+                <input type="email" name="email" placeholder="email"><br><br> 
+                <input type="password" name="pass" placeholder="password"><br><br>
+                <input type="submit" style="background-color: pink;" value="submit">
+
+
+             </form>
+    </div>
+    <!-- this is the javascript used in this webpage which is uses give and take information from the user and for the user. -->
+    <script type="text/javascript">
+        function passwordvalid(){
+            var password=document.form.pass.value;
+            var name=document.form.frstname.value;
+            var lname=document.form.lastname.value;
+            var emai=document.form.email.value;
+            var ph=document.form.phone.value;
+    
+            if(name!="" && lname!="" && ph!="" &&emai!="" &&password!=""){
+
+            alert("your form is submited....");
+            return true;
+
+            }else{
+
+            alert("please all the field......");
+            return false;
+            }
+           }
+        
+        
+        
+        
+    </script>
+  
+    
+</body>
+</html>
